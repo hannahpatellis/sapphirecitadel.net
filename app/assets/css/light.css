@@ -1,0 +1,18 @@
+body {
+  background-color: var(--scn-light);
+  background-image: url("/assets/img/atmosphere-light.jpg");
+  color: var(--scn-dark);
+}
+
+svg#logo {
+  animation: glowing-light 2500ms infinite ease;
+  fill: var(--scn-dark);
+}
+svg#logo .logo-body {
+}
+
+@keyframes glowing-light {
+  0% { fill: var(--scn-dark-t); filter: drop-shadow(0 0 5px var(--scn-lblue)); }
+  50% { fill: var(--scn-dark); filter: drop-shadow(0 0 20px var(--scn-lblue)); }
+  100% { fill: var(--scn-dark-t); filter: drop-shadow(0 0 5px var(--scn-lblue)); }
+}

@@ -74,7 +74,9 @@ table {
 	--scn-dgray: #39546E;
 	--scn-lgray: #DDE6EA;
 	--scn-light: #fbfaf3;
+  --scn-light-t: #fbfaf37b;
 	--scn-dark: #022344;
+  --scn-dark-t: #0223447b;
 	--scn-coral: #ffcdc5;
 	--scn-peach: #FFD1C2;
 	--scn-dblue: #004774;
@@ -89,10 +91,29 @@ table {
 body {
 	font-family: 'Proxima Nova', Helvetica, sans-serif;
 	font-weight: 600;
-	background-color: var(--scn-dark);
-	color: var(--scn-light);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo-body {
-  fill: #fbfaf3;
+main {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+svg#logo {
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	main {
+    justify-content: center;
+  }
 }

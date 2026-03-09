@@ -1,0 +1,18 @@
+body {
+  background-color: var(--scn-dark);
+  background-image: url("/assets/img/atmosphere-dark.jpg");
+  color: var(--scn-light);
+}
+
+svg#logo {
+  animation: glowing-dark 2500ms infinite ease;
+  fill: var(--scn-light);
+}
+svg#logo .logo-body {
+}
+
+@keyframes glowing-dark {
+  0% { fill: var(--scn-light-t); filter: drop-shadow(0 0 5px var(--scn-light)); }
+  50% { fill: var(--scn-light); filter: drop-shadow(0 0 20px var(--scn-light)); }
+  100% { fill: var(--scn-light-t); filter: drop-shadow(0 0 5px var(--scn-light)); }
+}
