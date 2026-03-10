@@ -1,1 +1,1 @@
-<?php header('Location: https://hannahap.com'); ?>
+<?php header('Location: https://sapphirecitadel.net'); ?>
