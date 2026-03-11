@@ -1,1 +1,7 @@
-<?php print("Hey."); ?>
+<?php
+
+session_start();
+
+print("Hey.");
+
+?>
